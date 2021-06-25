@@ -5,7 +5,7 @@ $border-radius: 1rem;
 
 $secondary: #76949f;
 $primary: #a70000;
-$primary-bg: #1f1f1f;
+$primary-bg: #161616;
 $tertiary: #f4c95d;
 $martel: "Martel", serif;
 $montserrat: "Montserrat", sans-serif;
@@ -52,6 +52,8 @@ $container-max-widths: (
 @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/card";
 @import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/containers";
+
 
 @import "../../node_modules/bootstrap/scss/utilities";
 
@@ -64,9 +66,127 @@ $secondary: $gray-600;
 // $danger: $red;
 $light: $gray-100;
 $dark: $dark;
+$navbar-height: 70px;
 
 body {
     background-color: $primary-bg;
     color: $white;
     font-family: $montserrat;
+}
+
+.navbar-brand {
+    margin: 0 1rem;
+}
+
+.navbar {
+    height: $navbar-height;
+    position: fixed;
+    background-color: $dark;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    font-size:1em;
+    font-weight: bold;
+    vertical-align: middle;
+    height: fit-content;
+}
+
+#home {
+    padding-top: $navbar-height;
+    width: 100%;
+    height:100vh;
+    background-image: url("../img/dylan-landscape.jpg");
+    background-size: cover;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.image-container {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+}
+
+#image1 {
+    background-image: url("../img/dylan1.jpg");
+}
+
+#image2 {
+    background-image: url("../img/dylan2.jpg");
+}
+#image3 {
+    background-image: url("../img/dylan3.jpg");
+}
+#image4 {
+    background-image: url("../img/dylan4.jpg");
+}
+
+#DWLogo {
+    background-image: url("../img/DWWordMark@0.5x.png");
+    width: 88px;
+    height: 61px;
+    background-size: cover;
+    filter: invert(100%);
+
+}
+
+nav {
+    z-index: 1;
+}
+
+// @media screen and (max-width: 767px) {
+//     .navbar {
+//         width: 100%;
+//         justify-content: center;
+//     }
+// }
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .container-xl {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    section {
+        padding: $navbar-height 1rem 2rem 1rem;
+    }
+}
+@media screen and (min-width: 400px) {
+    section {
+        padding: $navbar-height 2rem 2rem 2rem;
+    }
+}
+
+.section-title {
+    margin: 0 auto 1.5rem auto;
+    // margin-bottom: 1.5rem;
+    border-bottom: 1px solid $white;
+    width: fit-content;
+}
+
+p {
+    font-size: .85rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
 }
