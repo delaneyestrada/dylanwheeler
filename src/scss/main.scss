@@ -78,7 +78,7 @@ body {
 }
 
 .navbar {
-    height: calc($navbar-height + 1rem);
+    height: calc(#{$navbar-height} + 1rem);
     position: fixed;
     background-color: darken($dark, 5%);
 }
@@ -280,12 +280,19 @@ nav {
     z-index: 1;
 }
 
-// @media screen and (max-width: 767px) {
-//     .navbar {
-//         width: 100%;
-//         justify-content: center;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    .navbar {
+
+        background-color: transparent !important;
+        color: white;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: rgba(255, 255, 255, 1) !important;
+        border-color: transparent;
+        opacity: 1 !important;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .navbar {
