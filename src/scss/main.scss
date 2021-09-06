@@ -13,8 +13,7 @@ $montserrat: "Montserrat",
 sans-serif;
 $logo-height: 4rem;
 $dark: $primary-bg;
-
-$grid-breakpoints: (xs: 0,
+<<<<<<< HEAD $grid-breakpoints: (xs: 0,
     sm: 576px,
     md: 768px,
     lg: 992px,
@@ -64,7 +63,7 @@ $secondary: $gray-600;
 // $warning: $yellow;
 // $danger: $red;
 $light: $gray-100;
-$dark: $dark;
+=======>>>>>>>7f8e42e1053b424038f74eb69d664bc8d991d44d $dark: $dark;
 $navbar-height: 70px;
 
 body {
@@ -74,13 +73,41 @@ body {
 }
 
 .navbar-brand {
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%,
+            -50%);
+    /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
+
+.navbar-left {
+    display: flex;
+    margin-right: 44px;
+    margin-left: 25px;
+}
+
+.navbar-right {
+    margin-left: 104px;
+    display: flex;
+}
+
+.navbar-nav {
+    position: relative;
 }
 
 .navbar {
-    height: calc($navbar-height + 1rem);
-    position: fixed;
-    background-color: darken($dark, 5%);
+    height: $navbar-height;
+    position: absolute;
+    background-color: transparent;
+}
+
+.images {
+    margin-bottom: 2rem;
 }
 
 .navbar-nav {
@@ -92,6 +119,7 @@ body {
 }
 
 .nav-link {
+    text-transform: uppercase;
     font-size: 1em;
     font-weight: bold;
     vertical-align: middle;
@@ -116,7 +144,6 @@ body {
     height: 100vh;
     background-image: url("../img/dylan-landscape.jpg");
     background-size: cover;
-    background-position: center;
     -webkit-filter: brightness(70%);
     filter: brightness(70%);
     z-index: -1;
@@ -321,12 +348,11 @@ nav {
 }
 
 p {
-    font-size: .85rem;
+    font-size: 0.85rem;
 }
 
 footer {
     display: flex;
     justify-content: center;
     padding: 1rem 0;
-    font-size: .7rem;
 }
