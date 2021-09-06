@@ -65,7 +65,7 @@ $secondary: $gray-600;
 // $danger: $red;
 $light: $gray-100;
 $dark: $dark;
-$navbar-height: 70px;
+$navbar-height: calc(70px + 1rem);
 
 body {
     background-color: $primary-bg;
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar {
-    height: calc(#{$navbar-height} + 1rem);
+    height: $navbar-height;
     position: fixed;
     background-color: darken($dark, 5%);
 }
@@ -116,7 +116,8 @@ body {
     height: 100vh;
     background-image: url("../img/dylan-landscape.jpg");
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: top;
     -webkit-filter: brightness(70%);
     filter: brightness(70%);
     z-index: -1;
