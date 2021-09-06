@@ -1,98 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dylan Wheeler</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Martel:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a
-                            class="nav-link"
-                            aria-current="page"
-                            href="#home"
-                            lang="en-US"
-                            >Home</a
-                        >
 
-                        <a class="nav-link" href="#about" lang="en-US">About</a>
-                        <a class="nav-link" href="#tour" lang="en-US"
-                            >Tour</a
-                        >
-                        <a class="navbar-brand" id="DWLogo" href="#home">
-                            <!-- <img src="img/initials.png" alt=""/> -->
-                        </a>
-                        <a class="nav-link" href="#media">Media</a>
-                        <a class="nav-link" href="#merch">Merch</a>
-                        <a class="nav-link" href="#contact" lang="en-US"
-                            >Contact
-                            </a
-                        >
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dylan Wheeler</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("overlayNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("overlayNav").style.width = "0%";
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <button class="navbar-toggler bg-transparent" type="button" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#tour">Tour</a>
+                    <a class="navbar-brand" id="DWLogo" href="#home">
+                        <!-- <img src="img/initials.png" alt=""/> -->
+                    </a>
+                    <a class="nav-link" href="#media">Media</a>
+                    <a class="nav-link" href="#merch">Merch</a>
+                    <a class="nav-link" href="#contact">Contact
+                    </a>
                 </div>
             </div>
-        </nav>
-        <div class="jumbotron" id="home">
         </div>
-        <div class="container-xl">
+    </nav>
+    <!-- The overlay -->
+    <div id="overlayNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a class="nav-link" aria-current="page" onclick="closeNav()" href="#home">Home</a>
+            <a class="nav-link" onclick="closeNav()" href="#about">About</a>
+            <a class="nav-link" onclick="closeNav()" href="#tour">Tour</a>
+            <a class="nav-link" onclick="closeNav()" href="#media">Media</a>
+            <a class="nav-link" onclick="closeNav()" href="#merch">Merch</a>
+            <a class="nav-link" onclick="closeNav()" href="#contact">Contact
+            </a>
+        </div>
+    </div>
+    <div class="jumbotron" id="home">
+    </div>
+    <div class="container-xl">
         <section id="about">
             <h2 class="section-title">About</h2>
-            <p>East Texas native, Dylan Wheeler dropped his debut EP “Tell Me If I’m Wrong” in November of 2018 and since, his name has continued to be added to lists of emerging singer/songwriters to watch in the Texas/Red dirt music scene. The 24-year-old out of Edgewood Texas didn’t begin his musical journey until age 22 after leaving the oilfield to pursue his dream of becoming a touring musician. The dynamic singer/songwriter spent the last two years playing solo acoustic shows in and around college towns, helping him gain popularity amongst college crowds. Wheeler’s musical influences range from Rob Thomas and Jared Leto, to Aaron Lewis, which has influenced his own sound. Wheeler’s vocals are packed with emotion, season and come out smooth, that, combined with his relatable lyrics and catchy tunes have certainly been the cause of his rapidly growing fan base. His newest tune, “Broke A$$ Kid” now sits at more than 300K streams and has given Wheeler the momentum he needed to take his career to the next level. Wheeler has curated his own sound and style, whether it’s full band or solo acoustic, it’s certainly a show you won’t want to miss. Wheeler is already back in the studio pushing to release new songs before the end of the year.</p>
+            <p>The “Broke Ass Kid” Dylan Wheeler is a perfect example of what the evolution of the Texas Independent
+                Music Scene looks like and the level of artist that it can produce. His music has all the
+                singer-songwriter laden depth that lyric lovers covet, while his blending of both Rock and Alternative
+                genres allows his original productions to feel comfortingly familiar whilst simultaneously breathing a
+                gust of fresh air into a scene that has long been saturated by its Country roots. Combine that with one
+                hell of a powerful vocal and a singing style shaped by influences such as Chris Cornell, Eddie Vedder,
+                and Layne Staley and you begin to see why Dylan Wheeler is a truly unique and special artist. His music
+                does not fit into any one specific box, but it absolutely has the mass appeal that has been known to
+                make dreams come true. Right now, Dylan is living that dream and although it is just the beginning the
+                future is looking rather bright for this ambitious young man. </p>
+            <p>Dylan hails from Edgewood, Texas and although he might have cut his teeth in the tiny dive bars all
+                around Texas like so many of his East Texas heroes before him, his ability to garner a committed fan
+                base early on, even before he had officially released any music, is a distinct characteristic of the new
+                generation of artists that Dylan is a part of. His use of social media platforms, like Twitter, where he
+                would post acoustic videos of both originals and cover songs allowed Dylan to gain fans from all over
+                long before he had committed himself to being a full-time musician. One such video, of the 90’s country
+                hit “Strawberry Wine”, that he uploaded back in May of 2017 quickly gained well over 100,000 views and
+                would give him an early glimpse of “what could be”. His continual cultivation of this early fanbase made
+                the release of his first EP “Tell Me If I’m Wrong” towards the end of 2018 one of most highly
+                anticipated releases for a new artist for that entire year. Those early songs quickly tallied 10’s of
+                thousands and then 100’s of thousands of streams and it was only after this small taste of success that
+                Dylan decided that becoming a full-time musician was attainable, in all honesty, this fate seemed rather
+                unavoidable to anybody who had been paying attention. </p>
+            <p>In 2019 Dylan finalized that decision by quitting his job working in the Oil & Gas industry and committed
+                himself full-time to his music and everything that goes along with it. With the training wheels finally
+                off Dylan’s schedule quickly filled up, the shows got bigger… and better, he began making more trips to
+                Nashville to write and record new music, he kept up his engagement with his ever-growing fanbase, and
+                most importantly he released new music that displayed all the growth that came along with fully
+                committing himself to his art. Every new song that Dylan has released has given us a further glimpse of
+                what he is capable of and with each new layer of growth he grabbed new fans and made all the people that
+                already love him even more committed to following his journey.
+            </p>
+            <p>In just a few short years Dylan gone from getting 10’s of thousands of views on acoustic videos that he
+                would post to now amassing 10’s of millions of total streams across all major platforms. He’s gone from
+                playing those tiny dive bars to selling out major venues across his home state and others. But, if you
+                ask him he will let you know that he is just getting started and that the sky is the limit. Not too bad
+                for “some broke-ass kid beating on his guitar”, not too bad. </p>
         </section>
-        <section id="tour" >
-            
+        <section id="tour">
+
             <h2 class="section-title">Tour</h2>
-            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="dylan wheeler" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#a70000" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="false" data-link-text-color="#fbf9ff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
-            
+            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a
+                class="bit-widget-initializer" data-artist-name="dylan wheeler" data-display-local-dates="false"
+                data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF"
+                data-link-color="#a70000" data-background-color="rgba(0,0,0,0)" data-display-limit="15"
+                data-display-start-time="false" data-link-text-color="#fbf9ff" data-display-lineup="false"
+                data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
+
         </section>
         <section id="media">
             <h2 class="section-title">Media</h2>
-            <div class="images">
-            <div class="image-container" id="image1"></div>
-            <div class="image-container" id="image2"></div>
-            <div class="image-container" id="image3"></div>
-            <div class="image-container" id="image4"></div>
+            <div class="images mb-3">
+                <div class="image-container" id="image1"></div>
+                <div class="image-container" id="image2"></div>
+                <div class="image-container" id="image3"></div>
+                <div class="image-container" id="image4"></div>
             </div>
-            <div class="spotify-playlist"><iframe src="https://open.spotify.com/embed/album/0cIJRtrWBnVEpTbQdRqqsL?theme=0" width="100%" height="75" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="spotify-playlist"><iframe src="https://open.spotify.com/embed/album/6ZdP5o3oXMpIsYCYBU6pRu?theme=0" width="100%" height="75" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="spotify-playlist"><iframe src="https://open.spotify.com/embed/album/2HfPwB24BxVvoZJf6aDVAP?theme=0" width="100%" height="75" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="spotify-playlist"><iframe src="https://open.spotify.com/embed/album/1j32N65JsJWiBYojBScgoW?theme=0" width="100%" height="280" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="spotify-playlist"><iframe
+                    src="https://open.spotify.com/embed/album/0cIJRtrWBnVEpTbQdRqqsL?theme=0" width="100%" height="75"
+                    frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="spotify-playlist"><iframe
+                    src="https://open.spotify.com/embed/album/6ZdP5o3oXMpIsYCYBU6pRu?theme=0" width="100%" height="75"
+                    frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="spotify-playlist"><iframe
+                    src="https://open.spotify.com/embed/album/2HfPwB24BxVvoZJf6aDVAP?theme=0" width="100%" height="75"
+                    frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="spotify-playlist"><iframe
+                    src="https://open.spotify.com/embed/album/1j32N65JsJWiBYojBScgoW?theme=0" width="100%" height="280"
+                    frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
 
 
         </section>
         <section id="merch">
             <h2 class="section-title">Merch</h2>
+            <div class="card" id="merch-card">
+                <div class="card-body">
+                    <div id='collection-component-1630375952164'></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                            ShopifyBuyInit();
+                        } else {
+                            loadScript();
+                        }
+                    } else {
+                        loadScript();
+                    }
+
+                    function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0])
+                        .appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                    }
+
+                    function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                            domain: 'dylan-wheeler.myshopify.com',
+                            storefrontAccessToken: '29af3b7767735775cbb7b82d70c14764',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                            ui.createComponent('collection', {
+                                id: '276953268404',
+                                node: document.getElementById('collection-component-1630375952164'),
+                                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                options: {
+                                    "product": {
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "calc(25% - 20px)",
+                                                    "margin-left": "20px",
+                                                    "margin-bottom": "50px",
+                                                    "width": "calc(25% - 20px)"
+                                                },
+                                                "img": {
+                                                    "height": "calc(100% - 15px)",
+                                                    "position": "absolute",
+                                                    "left": "0",
+                                                    "right": "0",
+                                                    "top": "0"
+                                                },
+                                                "imgWrapper": {
+                                                    "padding-top": "calc(75% + 15px)",
+                                                    "position": "relative",
+                                                    "height": "0"
+                                                }
+                                            },
+                                            "title": {
+                                                "color": "#ffffff"
+                                            },
+                                            "button": {
+                                                "font-family": "Montserrat, sans-serif",
+                                                "font-weight": "bold",
+                                                ":hover": {
+                                                    "background-color": "#ff0000"
+                                                },
+                                                "background-color": "#a70000",
+                                                ":focus": {
+                                                    "background-color": "#ff0000"
+                                                }
+                                            },
+                                            "price": {
+                                                "color": "#ffffff"
+                                            },
+                                            "compareAt": {
+                                                "color": "#ffffff"
+                                            },
+                                            "unitPrice": {
+                                                "color": "#ffffff"
+                                            }
+                                        },
+                                        "text": {
+                                            "button": "Add to cart"
+                                        },
+                                        "googleFonts": [
+                                            "Montserrat"
+                                        ]
+                                    },
+                                    "productSet": {
+                                        "styles": {
+                                            "products": {
+                                                "@media (min-width: 601px)": {
+                                                    "margin-left": "-20px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "modalProduct": {
+                                        "contents": {
+                                            "img": false,
+                                            "imgWithCarousel": true,
+                                            "button": false,
+                                            "buttonWithQuantity": true
+                                        },
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "100%",
+                                                    "margin-left": "0px",
+                                                    "margin-bottom": "0px"
+                                                }
+                                            },
+                                            "button": {
+                                                "font-family": "Montserrat, sans-serif",
+                                                "font-weight": "bold",
+                                                ":hover": {
+                                                    "background-color": "#ff0000"
+                                                },
+                                                "background-color": "#a70000",
+                                                ":focus": {
+                                                    "background-color": "#ff0000"
+                                                }
+                                            },
+                                            "title": {
+                                                "font-family": "Helvetica Neue, sans-serif",
+                                                "font-weight": "bold",
+                                                "font-size": "26px",
+                                                "color": "#4c4c4c"
+                                            },
+                                            "price": {
+                                                "font-family": "Helvetica Neue, sans-serif",
+                                                "font-weight": "normal",
+                                                "font-size": "18px",
+                                                "color": "#4c4c4c"
+                                            },
+                                            "compareAt": {
+                                                "font-family": "Helvetica Neue, sans-serif",
+                                                "font-weight": "normal",
+                                                "font-size": "15.299999999999999px",
+                                                "color": "#4c4c4c"
+                                            },
+                                            "unitPrice": {
+                                                "font-family": "Helvetica Neue, sans-serif",
+                                                "font-weight": "normal",
+                                                "font-size": "15.299999999999999px",
+                                                "color": "#4c4c4c"
+                                            }
+                                        },
+                                        "googleFonts": [
+                                            "Montserrat"
+                                        ],
+                                        "text": {
+                                            "button": "Add to cart"
+                                        }
+                                    },
+                                    "option": {
+                                        "styles": {
+                                            "label": {
+                                                "color": "#ffffff"
+                                            }
+                                        }
+                                    },
+                                    "cart": {
+                                        "styles": {
+                                            "button": {
+                                                "font-family": "Montserrat, sans-serif",
+                                                "font-weight": "bold",
+                                                ":hover": {
+                                                    "background-color": "#ff0000"
+                                                },
+                                                "background-color": "#a70000",
+                                                ":focus": {
+                                                    "background-color": "#ff0000"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "total": "Subtotal",
+                                            "button": "Checkout"
+                                        },
+                                        "googleFonts": [
+                                            "Montserrat"
+                                        ]
+                                    },
+                                    "toggle": {
+                                        "styles": {
+                                            "toggle": {
+                                                "font-family": "Montserrat, sans-serif",
+                                                "font-weight": "bold",
+                                                "background-color": "#a70000",
+                                                ":hover": {
+                                                    "background-color": "#ff0000"
+                                                },
+                                                ":focus": {
+                                                    "background-color": "#ff0000"
+                                                }
+                                            }
+                                        },
+                                        "googleFonts": [
+                                            "Montserrat"
+                                        ]
+                                    }
+                                },
+                            });
+                        });
+                    }
+                })();
+                /*]]>*/
+            </script>
         </section>
         <section id="contact">
             <h2 class="section-title">Contact</h2>
+            <div class="my-3 d-flex justify-content-center booking-info-container">
+                <div class="booking-info text-center">
+                    <h5>Booking</h5>
+                    <a href="https://red11music.com/dylan-wheeler/" target="_blank">
+                        <div id="booking-logo"></div>
+                    </a>
+                </div>
+            </div>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" aria-describedby="name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" required id="email"
+                        aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea type="text" class="form-control" name="message" required id="message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span>Submit</span>
+                </button>
+            </form>
         </section>
     </div>
     <footer>
         <div class="credit">
-        Created by <a href="https://www.dillonestrada.com">Dillon Estrada</a>
-    </div>
+            Created by <a href="https://www.dillonestrada.com">Dillon Estrada</a>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
