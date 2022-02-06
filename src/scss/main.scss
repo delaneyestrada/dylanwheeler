@@ -131,6 +131,16 @@ body {
   justify-content: center;
 }
 
+.spotify-playlist,
+iframe {
+  z-index: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  margin: auto;
+}
 @media screen and (min-width: 710px) {
   .images {
     grid-template-columns: 350px 350px;
